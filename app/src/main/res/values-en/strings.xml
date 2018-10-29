@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Film</string>
+    <string name="tanggal_tayang">Tanggal Tayang</string>
+    <string name="detail">Detail</string>
+    <string name="bahasa">Bahasa</string>
+</resources>

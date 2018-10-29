@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">Movie</string>
-    <string name="tanggal_tayang">Tanggal Tayang</string>
-    <string name="detail">Detail</string>
+    <string name="app_name">फ़िल्म</string>
+    <string name="tanggal_tayang">प्रसारण तिथि</string>
+    <string name="detail">विवरण</string>
+    <string name="bahasa">भाषा</string>
+
 </resources>

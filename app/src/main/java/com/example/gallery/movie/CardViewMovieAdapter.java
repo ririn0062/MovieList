@@ -1,6 +1,7 @@
 package com.example.gallery.movie;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -39,7 +40,7 @@ public class CardViewMovieAdapter extends RecyclerView.Adapter<CardViewMovieAdap
 
     @Override
     public void onBindViewHolder(@NonNull CardViewHolder cardViewHolder, int i) {
-        Movie m = getMovies().get(i);
+       final Movie m = getMovies().get(i);
 
         Glide.with(context)
                 .load(m.getImgPoster())
@@ -56,12 +57,16 @@ public class CardViewMovieAdapter extends RecyclerView.Adapter<CardViewMovieAdap
             @Override
             public void onClick(View v) {
                 Toast.makeText(context, "Detail" , Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(context, DetailMovie.class);
+                intent.putExtra("F", m);
+                context.startActivity(intent);
             }
         });
     }
 
     @Override
     public int getItemCount() {
+
         return getMovies().size();
     }
 

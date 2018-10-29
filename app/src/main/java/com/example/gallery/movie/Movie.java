@@ -1,6 +1,8 @@
 package com.example.gallery.movie;
 
-public class Movie {
+import java.io.Serializable;
+
+public class Movie implements Serializable {
     private String txtTitle;
     private String txtOverview;
     private String releaseDate;
